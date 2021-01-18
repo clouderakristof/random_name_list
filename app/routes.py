@@ -16,7 +16,7 @@ def mix():
     team_list = ["ckoncz", "zsfekete", "dkelencz", "kmolnosi", "odozsa", "gtoth"]
     global random_team_list
     random_team_list = random.sample(team_list,len(team_list))
-    return "Mixed! Please visit the /list page"
+    return ''.join(random_team_list)
 
 @app.route('/list')
 def hello_world():
