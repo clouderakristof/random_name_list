@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 import random
+import os.path
 app = Flask(__name__)
 
 random_team_list = []
@@ -38,6 +39,8 @@ def mix():
 
 @app.route('/list')
 def hello_world():
+    if not os.path.isfile('listfile.txt'):
+        mix()
     random_team_list=file_reader('listfile.txt')
     #return '\n'.join(random_team_list)
     return render_template('list.html', random_team_list=file_reader('listfile.txt'))
