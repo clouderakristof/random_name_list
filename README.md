@@ -4,7 +4,7 @@ This app was created to generate random list from ranger/knox/atlas sustaining t
 
 Use the `/mix` endpoint to mix the names and use the `/list` endpoint to check mixed names.
 
-##Usage
+## Usage
 
 The app is hsoted on Heroku. You can find the site at this url: https://arcane-lake-90901.herokuapp.com/list
 
