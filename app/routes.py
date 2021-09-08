@@ -31,7 +31,7 @@ def index():
 
 @app.route('/mix')
 def mix():
-    team_list = ["ckoncz", "zsfekete", "dkelencz", "kmolnosi", "odozsa", "gtoth"]
+    team_list = ["isos", "ckoncz", "zsfekete", "dkelencz", "kmolnosi", "odozsa", "gtoth"]
     global random_team_list
     file_writer('listfile.txt', random.sample(team_list,len(team_list)))
     return "Mixed!!! Please visit the /list page"
